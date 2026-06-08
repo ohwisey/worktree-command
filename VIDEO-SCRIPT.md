@@ -24,4 +24,4 @@ Show typing each one.
 
 ## 1:50 to 2:00 the one rule and cleanup
 
-"One rule: one folder, one window, one branch. Never open the same folder in two windows. And when you are done with a worktree, git worktree remove cleans it up. Link to install is below."
+"One rule: one folder, one window, one branch. Never open the same folder in two windows. And when these pile up, just type `/cleanup`. It shows your worktrees and clears out the ones you are done with, and it never touches your main project. Link to install is below."

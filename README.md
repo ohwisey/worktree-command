@@ -46,10 +46,18 @@ The commands live in `~/.claude/commands/`, so they work in every project.
 
 ## Cleanup
 
-When you are done with a worktree, run this from the main project:
+Worktrees pile up over time. When you are done with some, just run:
+
+```
+/cleanup
+```
+
+It shows you every worktree you have and lets you remove the ones you do not want. It never touches your main project, and it warns you before removing anything with unsaved work, so you cannot lose anything by accident. You can also remove one by name (`/cleanup test`) or clear them all (`/cleanup all`).
+
+If you prefer the manual way, this also works from the main project:
 
 ```
 git worktree remove .claude/worktrees/NAME
 ```
 
-New projects are just normal folders. Delete them like any other folder when you are done.
+New projects (from `/newproject`) are just normal folders. Delete them like any other folder when you are done.

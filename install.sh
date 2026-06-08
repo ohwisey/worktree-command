@@ -32,9 +32,11 @@ install_cmd() { # $1 = command file name, like worktree.md
 
 install_cmd worktree.md
 install_cmd newproject.md
-echo "  - installed /worktree and /newproject"
+install_cmd cleanup.md
+echo "  - installed /worktree, /newproject, and /cleanup"
 
 echo ""
 echo "Done. Start a NEW Claude Code session, then try:"
 echo "  /worktree my-experiment      (connected copy of this project)"
 echo "  /newproject my-new-thing     (brand new separate project)"
+echo "  /cleanup                     (tidy up worktrees you are done with)"
